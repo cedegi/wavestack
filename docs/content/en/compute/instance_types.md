@@ -217,6 +217,15 @@ Information in this document is provided in the following units:
 | **Bandwidth**       | Gbit/s |
 | **Disk Throughput** | GiB/s  |
 
+### Pricing with CPU-Shares
+
+In order to enable pricing that is as fair as possible, we have designed “CPU shares”. This means we can also differentiate between the different core types in pricing. Each CPU type corresponds to a certain amount of shares. The amount of shares mentioned on the invoice corresponds to the following table:
+
+| CPU-Type            | amount of shares       |
+|---------------------|------------------------|
+| **L**               | 1 CPU-Shares           |
+| **V**               | 10 CPU-Share           |
+
 <!-- References -->
 
 [gh-scs-standards-v3-flavor-naming]: https://github.com/SovereignCloudStack/standards/blob/main/Standards/scs-0100-v3-flavor-naming.md
